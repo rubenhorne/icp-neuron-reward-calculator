@@ -24,22 +24,35 @@
       // alert('Bob Saget');
       // console.log(42);
       // ryanf(P=P.0 * e^(1+t*x/))
-      const endingBalance = ryanf(
+      const finalInvestmentValue = ryanf(
         100,
         20,
         0.28,
         1
       );
-      
+
       console.log(endingBalance);
 
-      function ryanf(
-        principal,
+      function calculateFinalInvestmentValue(
+        principalInICP,
         timeInYears,
-        interestRate,
+        interestRateAsDecimal,
         constant
       ) {
-        return principal * Math.E ** (timeInYears * interestRate * constant);
+        const exponentOfE = multiplyThreeThings(
+          timeInYears,
+          interestRateAsDecimal,
+          constant
+        );
+        return principalInICP * Math.E ** exponentOfE;
+      }
+
+      function multiplyThreeThings(
+        x,
+        y,
+        z
+      ) {
+        return x * y * z;
       }
     </script>
   </body>
