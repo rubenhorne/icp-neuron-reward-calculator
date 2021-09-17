@@ -25,6 +25,13 @@
         Calculate
       </button>
     </div>
+    <br>
+    <div>
+      <div>
+        Ending ICP
+      </div>
+      <div id="ending-icp"></div>
+    </div>
     
     <script>
       function calculate() {
@@ -32,8 +39,9 @@
         const timeStakedInYears = document.getElementById('time-staked-in-years').value;
         console.log('initialIcpInvestment', initialIcpInvestment);
         console.log('timeStakedInYears', timeStakedInYears);
+        const endingIcp = initialIcpInvestment*timeStakedInYears;
+        document.getElementById('ending-icp').innerHTML = endingIcp;
       }
-
       // alert('Bob Saget');
       // console.log(42);
       // ryanf(P=P.0 * e^(1+t*x/))
