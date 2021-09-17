@@ -10,14 +10,14 @@
       <div>
         Initial ICP investment
       </div>
-      <input type="number">
+      <input type="number" id="initial-icp-investment">
     </div>
     <br>
     <div>
       <div>
         Time staked (yrs)
       </div>
-      <input type="number">
+      <input type="number" id="time-staked-in-years">
     </div>
     <br>
     <div>
@@ -28,7 +28,10 @@
     
     <script>
       function calculate() {
-        alert('Monkeys got you');
+        const initialIcpInvestment = document.getElementById('initial-icp-investment').value;
+        const timeStakedInYears = document.getElementById('time-staked-in-years').value;
+        console.log('initialIcpInvestment', initialIcpInvestment);
+        console.log('timeStakedInYears', timeStakedInYears);
       }
 
       // alert('Bob Saget');
