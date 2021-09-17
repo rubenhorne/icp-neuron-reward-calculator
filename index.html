@@ -19,40 +19,51 @@
       </div>
       <input type="number">
     </div>
+    <br>
+    <div>
+      <button onclick="calculate()">
+        Calculate
+      </button>
+    </div>
+    
     <script>
+      function calculate() {
+        alert('Monkeys got you');
+      }
+
       // alert('Bob Saget');
       // console.log(42);
       // ryanf(P=P.0 * e^(1+t*x/))
-      const finalInvestmentValue = calculateFinalInvestmentValue(
-        100,
-        20,
-        0.28,
-        1
-      );
+      // const finalInvestmentValue = calculateFinalInvestmentValue(
+      //   100,
+      //   20,
+      //   0.28,
+      //   1
+      // );
 
-      console.log(finalInvestmentValue);
+      // console.log(finalInvestmentValue);
 
-      function calculateFinalInvestmentValue(
-        principalInICP,
-        timeInYears,
-        interestRateAsDecimal,
-        constant
-      ) {
-        const exponentOfE = multiplyThreeThings(
-          timeInYears,
-          interestRateAsDecimal,
-          constant
-        );
-        return principalInICP * Math.E ** exponentOfE;
-      }
+      // function calculateFinalInvestmentValue(
+      //   principalInICP,
+      //   timeInYears,
+      //   interestRateAsDecimal,
+      //   constant
+      // ) {
+      //   const exponentOfE = multiplyThreeThings(
+      //     timeInYears,
+      //     interestRateAsDecimal,
+      //     constant
+      //   );
+      //   return principalInICP * Math.E ** exponentOfE;
+      // }
 
-      function multiplyThreeThings(
-        x,
-        y,
-        z
-      ) {
-        return x * y * z;
-      }
+      // function multiplyThreeThings(
+      //   x,
+      //   y,
+      //   z
+      // ) {
+      //   return x * y * z;
+      // }
     </script>
   </body>
 </html>
